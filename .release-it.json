@@ -1,10 +1,8 @@
-﻿{
+{
   "git": {
     "commitMessage": "chore: release v${version}"
   },
   "github": {
-    "release": true,
-    "before:git:release": "mv ./CLI/bin/Release/CLI.exe ./CLI/bin/Release/omen-v${version}.exe",
-    "assets": "./CLI/bin/Release/omen-v${version}.exe"
+    "release": true
   }
 }
