@@ -1,0 +1,26 @@
+﻿name: Build Project and Publish Github Release
+on:
+  push:
+    branches:
+      - master
+      - feat/ci
+jobs: 
+  build-and-release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.0.3
+      
+      - name: Install Nuget Dependencies
+        run: |
+          nuget install .\CLI\packages.config -OutputDirectory packages
+      
+      - name: Build Project with MSBuild
+        run: |
+          MSBuild.exe /property:Configuration=Release
+      
+      - name: Make Github Release
+        run: |
+          npx release-it
