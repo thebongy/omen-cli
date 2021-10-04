@@ -15,7 +15,7 @@ namespace LightingControl
     class SetOneOptions
     {
         [Value(0, HelpText = "The Color")] public string color { get; set; }
-        [Option(HelpText = "type", Default = "Specifies the color arg format (either name (default) or rgb)")] public string type { get; set;  }
+        [Option(HelpText = "Specifies the color arg format (either name (default) or rgb)", Default = "name")] public string type { get; set;  }
 
     }
     
