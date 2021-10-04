@@ -26,3 +26,5 @@ jobs:
           git config --global user.email "rishit.bansal0@gmail.com"
           git config --global user.name "thebongy"
           npx release-it
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
