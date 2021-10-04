@@ -3,6 +3,10 @@
     "commitMessage": "chore: release v${version}"
   },
   "github": {
-    "release": true
+    "release": true,
+    "assets": ["./CLI/bin/Release/CLI-v${version}.exe"]
+  },
+  "hooks": {
+    "after:git:release": "mv ./CLI/bin/Release/CLI.exe ./CLI/bin/Release/CLI-v${version}.exe"
   }
 }
