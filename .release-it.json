@@ -6,6 +6,9 @@
     "release": true,
     "assets": ["./CLI/bin/Release/CLI-v${version}.exe"]
   },
+  "npm": {
+    "publish": false
+  },
   "hooks": {
     "after:git:release": "mv ./CLI/bin/Release/CLI.exe ./CLI/bin/Release/CLI-v${version}.exe"
   }
