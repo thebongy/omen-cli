@@ -23,4 +23,6 @@ jobs:
       
       - name: Make Github Release
         run: |
+          git config --global user.email "rishit.bansal0@gmail.com"
+          git config --global user.name "thebongy"
           npx release-it
