@@ -50,7 +50,7 @@
 ### Built With
 
 * [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
-* [.Net Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net45)
+* [.Net Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 * [CommandLineParser](https://github.com/commandlineparser/commandline)
 
 
@@ -62,7 +62,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-* .NET Framework 4.5
+* .NET Framework 4.8
 * Nuget.exe CLI
 * MSBuild.exe CLI
 
