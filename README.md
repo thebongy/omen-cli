@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/thebongy/omen-cli">
-    <img src="./assets/logo.png" alt="Logo" width="80">
+    <img src="https://raw.githubusercontent.com/thebongy/omen-cli/master/assets/logo.png" alt="Logo" width="80">
   </a>
 
   <b><h2 align="center">omen-cli</h2></b>
